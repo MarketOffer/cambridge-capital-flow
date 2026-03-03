@@ -24,7 +24,7 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
-        <a href="#" className="font-sans text-xl font-bold tracking-tight text-foreground">
+        <a href="#" className="text-xl font-semibold tracking-tight text-foreground">
           brightcap
         </a>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className={`font-sans text-sm tracking-wide transition-colors duration-200 ${
+              className={`text-sm tracking-[0.02em] transition-colors duration-200 ${
                 link.label === "Contact"
                   ? "text-primary font-semibold hover:opacity-80"
                   : "text-muted-foreground hover:text-foreground"
@@ -65,7 +65,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className={`block py-3 font-sans text-sm tracking-wide ${
+              className={`block py-3 text-sm tracking-[0.02em] ${
                 link.label === "Contact"
                   ? "text-primary font-semibold"
                   : "text-muted-foreground"

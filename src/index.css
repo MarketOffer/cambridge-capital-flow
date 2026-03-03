@@ -34,8 +34,7 @@
 
     --radius: 0.25rem;
 
-    --font-serif: 'DM Serif Display', Georgia, serif;
-    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-sans: 'Barlow', system-ui, sans-serif;
   }
 }
 
@@ -56,8 +55,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-    font-weight: 400;
+    font-family: var(--font-sans);
+    font-weight: 600;
     letter-spacing: -0.02em;
   }
 }
