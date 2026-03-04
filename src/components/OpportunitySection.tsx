@@ -10,17 +10,17 @@ const OpportunitySection = () => (
       </FadeIn>
       <FadeIn delay={0.1}>
         <p className="mt-10 font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
-          AI is pulling talent, capital and opportunity into a small number of cities. That's not a cycle — it's a shift. And it's accelerating.
+          AI is accelerating the economic growth of a small number of cities — and leaving others behind. That's not a cycle — it's a shift.
         </p>
       </FadeIn>
       <FadeIn delay={0.2}>
         <p className="mt-6 font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
-          The cities at the centre of it will grow. The ones on the outside will struggle.
+          The cities at the centre of it will attract talent, capital and opportunity for decades — driving long-term rental demand and property values in the process.
         </p>
       </FadeIn>
       <FadeIn delay={0.3}>
         <p className="mt-8 font-sans text-base leading-relaxed text-foreground md:text-lg">
-          The property market hasn't priced this in yet. We've built our strategy around it.
+          The market hasn't priced this in yet. We've built our strategy around it.
         </p>
       </FadeIn>
     </div>
