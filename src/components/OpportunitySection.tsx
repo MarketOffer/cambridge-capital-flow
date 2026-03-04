@@ -10,12 +10,17 @@ const OpportunitySection = () => (
       </FadeIn>
       <FadeIn delay={0.1}>
         <p className="mt-10 font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
-          AI is concentrating talent, capital and economic activity into a small number of innovation hubs globally. Cambridge is one of them — consistently ranked among the world's top AI and deep tech centres.
+          AI is pulling talent, capital and opportunity into a small number of cities. That's not a cycle — it's a shift. And it's accelerating.
         </p>
       </FadeIn>
       <FadeIn delay={0.2}>
         <p className="mt-6 font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
-          While institutional investors focus on regulation and affordability, we're positioning in the cities where demand is structurally supported for the next decade. Most large players aren't factoring this in yet. We are.
+          The cities at the centre of it will grow. The ones on the outside will struggle.
+        </p>
+      </FadeIn>
+      <FadeIn delay={0.3}>
+        <p className="mt-6 font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
+          The property market hasn't priced this in yet. We have.
         </p>
       </FadeIn>
     </div>
