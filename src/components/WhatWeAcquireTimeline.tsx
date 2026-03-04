@@ -22,11 +22,6 @@ const WhatWeAcquireTimeline = () => (
   <section className="px-6 py-28 md:px-10 md:py-36">
     <div className="mx-auto max-w-5xl">
       <FadeIn>
-        <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-          Variant A — Numbered Timeline
-        </p>
-      </FadeIn>
-      <FadeIn>
         <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
           What We Acquire
         </h2>
