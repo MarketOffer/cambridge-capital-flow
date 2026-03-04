@@ -2,20 +2,10 @@ import FadeIn from "./FadeIn";
 
 const stats = [
   {
-    label: "High Capital Growth",
-    highlight: "50%",
-    detail: "Over last 10 years",
-  },
-  {
     label: "Global Science & Tech",
     highlight: "No.1",
     detail: "Cluster in world — three years running",
     source: "WIPO 2022–2024",
-  },
-  {
-    label: "High Employment Growth",
-    highlight: "5×",
-    detail: "UK's average",
   },
   {
     label: "World-Class Talent",
@@ -26,6 +16,16 @@ const stats = [
     label: "Deep Tech Ecosystem",
     highlight: "5,300+",
     detail: "Science & tech firms incl. Google, Apple, ARM, AstraZeneca",
+  },
+  {
+    label: "High Capital Growth",
+    highlight: "50%",
+    detail: "Over last 10 years",
+  },
+  {
+    label: "High Employment Growth",
+    highlight: "5×",
+    detail: "UK's average",
   },
 ];
 
