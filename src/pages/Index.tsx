@@ -18,4 +18,4 @@ const Index = () => (
     <ContactSection />
     <Footer />
   </>
-);
+export default Index;
