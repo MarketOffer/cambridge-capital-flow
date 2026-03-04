@@ -2,7 +2,7 @@ import FadeIn from "./FadeIn";
 
 const OpportunitySection = () => (
   <section id="opportunity" className="px-6 py-28 md:px-10 md:py-36">
-    <div className="mx-auto max-w-3xl">
+    <div className="mx-auto max-w-3xl border-l-2 border-primary pl-8 md:pl-12">
       <FadeIn>
         <h2 className="text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
           Not all cities will grow equally.
@@ -19,7 +19,7 @@ const OpportunitySection = () => (
         </p>
       </FadeIn>
       <FadeIn delay={0.3}>
-        <p className="mt-6 font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
+        <p className="mt-8 font-sans text-base leading-relaxed text-foreground md:text-lg">
           The property market hasn't priced this in yet. We have.
         </p>
       </FadeIn>
