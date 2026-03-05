@@ -69,6 +69,7 @@ const VariantParallaxStrip = () => {
 
 /**
  * Variant A — Side-by-side grid
+ */
 const VariantSideBySide = () => (
   <div>
     <h3 className="mb-6 text-lg font-semibold text-foreground">A — Side-by-side</h3>
