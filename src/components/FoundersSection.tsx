@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn";
 const stats = [
   { number: "£5.7M", label: "Property portfolio" },
   { number: "34", label: "Years combined experience" },
-  { number: "20+", label: "UK & Global awards" },
+  { number: "20+", label: "UK & Global property and business awards" },
 ];
 
 const founders = [
