@@ -2,6 +2,7 @@ import WhatWeAcquireVariantSideBySide from "@/components/WhatWeAcquireVariantSid
 import WhatWeAcquireVariantStripBelow from "@/components/WhatWeAcquireVariantStripBelow";
 import WhatWeAcquireVariantInlineCard from "@/components/WhatWeAcquireVariantInlineCard";
 import WhatWeAcquireVariantBackground from "@/components/WhatWeAcquireVariantBackground";
+import WhatWeAcquireVariantPortrait from "@/components/WhatWeAcquireVariantPortrait";
 
 const CompareWhatWeAcquire = () => (
   <div className="bg-background">
