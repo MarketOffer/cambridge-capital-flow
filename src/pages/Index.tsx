@@ -5,6 +5,7 @@ import OpportunitySection from "@/components/OpportunitySection";
 import CambridgeSection from "@/components/CambridgeVariantVideo";
 import WhatWeAcquireTimeline from "@/components/WhatWeAcquireTimeline";
 import ConstructionSection from "@/components/ConstructionSection";
+import FoundersSection from "@/components/FoundersSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
