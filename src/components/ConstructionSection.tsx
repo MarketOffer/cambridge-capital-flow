@@ -15,10 +15,10 @@ const ConstructionSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"],
+    offset: ["end end", "end start"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["10%", "-60%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
 
   return (
     <section className="border-t border-border px-6 py-28 md:px-10 md:py-36">
