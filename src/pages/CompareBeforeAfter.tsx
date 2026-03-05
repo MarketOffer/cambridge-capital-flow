@@ -221,10 +221,11 @@ const CompareBeforeAfter = () => (
         Before / After — Layout Variants
       </h1>
       <p className="mt-3 text-base text-muted-foreground">
-        Five approaches for showing transformation photos. All use placeholder images.
+        Six approaches for showing transformation photos. All use placeholder images.
       </p>
 
       <div className="mt-16 space-y-24">
+        <VariantParallaxStrip />
         <FadeIn><VariantSideBySide /></FadeIn>
         <FadeIn delay={0.1}><VariantStacked /></FadeIn>
         <FadeIn delay={0.2}><VariantOverlap /></FadeIn>
