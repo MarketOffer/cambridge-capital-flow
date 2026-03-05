@@ -1,6 +1,6 @@
+import { useRef, useEffect, useCallback, useState } from "react";
 import FadeIn from "./FadeIn";
 import useEmblaCarousel from "embla-carousel-react";
-import { useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import kitchenBefore from "@/assets/construction-kitchen-before.webp";
 import kitchenAfter from "@/assets/construction-kitchen-after.webp";
@@ -19,6 +19,8 @@ const pairs = [
 ];
 
 const ConstructionSection = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -28,6 +30,49 @@ const ConstructionSection = () => {
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+
+  // Observe when the carousel is fully in view (bottom edge visible)
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { threshold: 0, rootMargin: "0px 0px 0px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  // Scroll-driven parallax: scroll the carousel forward as user scrolls the page
+  useEffect(() => {
+    if (!emblaApi || !isInView) return;
+
+    let lastScrollY = window.scrollY;
+    let rafId: number;
+
+    const onScroll = () => {
+      rafId = requestAnimationFrame(() => {
+        const delta = window.scrollY - lastScrollY;
+        lastScrollY = window.scrollY;
+
+        if (delta !== 0) {
+          // Convert page scroll delta into carousel scroll
+          const engine = (emblaApi as any).internalEngine();
+          if (engine) {
+            engine.scrollBody.useSpeed(0);
+            engine.scrollTo.distance(delta * -0.5, false);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(rafId);
+    };
+  }, [emblaApi, isInView]);
 
   return (
     <section className="border-t border-border px-6 py-28 md:px-10 md:py-36">
@@ -52,8 +97,8 @@ const ConstructionSection = () => {
           </p>
         </FadeIn>
 
-        {/* Looping carousel */}
-        <div className="relative mt-10">
+        {/* Looping carousel with scroll-driven parallax */}
+        <div className="relative mt-10" ref={sectionRef}>
           <div className="overflow-hidden rounded-2xl" ref={emblaRef}>
             <div className="flex">
               {pairs.map((pair) => (
