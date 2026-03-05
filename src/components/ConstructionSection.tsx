@@ -1,12 +1,14 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import FadeIn from "./FadeIn";
+import kitchenBefore from "@/assets/construction-kitchen-before.webp";
+import kitchenAfter from "@/assets/construction-kitchen-after.webp";
 
 const pairs = [
-  { label: "Chapel conversion" },
-  { label: "Interior refurbishment" },
-  { label: "Garden flat" },
-  { label: "Loft extension" },
+  { label: "Kitchen renovation", before: kitchenBefore, after: kitchenAfter },
+  { label: "Interior refurbishment", before: null, after: null },
+  { label: "Garden flat", before: null, after: null },
+  { label: "Loft extension", before: null, after: null },
 ];
 
 const ConstructionSection = () => {
