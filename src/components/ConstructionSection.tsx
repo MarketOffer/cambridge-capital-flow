@@ -53,7 +53,7 @@ const ConstructionSection = () => {
             {pairs.map((pair) => (
               <div key={pair.label} className="flex shrink-0 gap-3">
                 <div className="relative w-[280px] overflow-hidden rounded-xl border border-border bg-muted md:w-[340px]">
-                  <div className="flex aspect-[4/3] items-center justify-center">
+                  <div className="flex aspect-[3/2] items-center justify-center">
                     <span className="text-sm text-muted-foreground">Before photo</span>
                   </div>
                   <span className="absolute left-3 top-3 rounded-full border border-border bg-background/90 px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-muted-foreground backdrop-blur-sm">
@@ -61,7 +61,7 @@ const ConstructionSection = () => {
                   </span>
                 </div>
                 <div className="relative w-[280px] overflow-hidden rounded-xl border border-border bg-muted md:w-[340px]">
-                  <div className="flex aspect-[4/3] items-center justify-center">
+                  <div className="flex aspect-[3/2] items-center justify-center">
                     <span className="text-sm text-muted-foreground">After photo</span>
                   </div>
                   <span className="absolute left-3 top-3 rounded-full bg-primary px-2.5 py-0.5 text-[11px] font-semibold tracking-wide text-primary-foreground">
