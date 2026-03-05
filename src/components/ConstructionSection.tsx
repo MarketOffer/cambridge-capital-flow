@@ -15,7 +15,7 @@ const ConstructionSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["end bottom", "end start"],
+    offset: ["end end", "end start"],
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
