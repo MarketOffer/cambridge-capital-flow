@@ -24,7 +24,7 @@ const LogoStrip = () => (
         </p>
       </FadeIn>
       <FadeIn delay={0.1}>
-        <div className="flex flex-wrap items-end justify-center gap-6 md:flex-nowrap md:gap-10">
+        <div className="flex flex-wrap items-end justify-center gap-6 lg:flex-nowrap lg:gap-10">
           {logos.map((logo) => (
             <img
               key={logo.alt}
