@@ -1,11 +1,4 @@
 import FadeIn from "./FadeIn";
-import before1 from "@/assets/before-1.png";
-import before2 from "@/assets/before-2.png";
-
-const transformations = [
-  { before: before1, after: before1, label: "Chapel conversion" },
-  { before: before2, after: before2, label: "Full interior refurbishment" },
-];
 
 const ConstructionSection = () => (
   <section className="border-t border-border px-6 py-28 md:px-10 md:py-36">
@@ -30,38 +23,24 @@ const ConstructionSection = () => (
         </p>
       </FadeIn>
 
-      {/* Before / After pairs */}
-      <div className="mt-16 space-y-16">
-        {transformations.map((item, i) => (
-          <FadeIn key={item.label} delay={0.2 + i * 0.1}>
-            <div className="grid gap-4 md:grid-cols-2 md:gap-6">
-              {/* Before */}
-              <div className="group relative overflow-hidden rounded-2xl border border-border">
-                <img
-                  src={item.before}
-                  alt={`${item.label} — before`}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-                <span className="absolute left-4 top-4 rounded-full border border-border bg-background/90 px-3 py-1 text-xs font-semibold tracking-wide text-muted-foreground backdrop-blur-sm">
-                  Before
-                </span>
-              </div>
-
-              {/* After */}
-              <div className="group relative overflow-hidden rounded-2xl border border-border">
-                <img
-                  src={item.after}
-                  alt={`${item.label} — after`}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-                <span className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold tracking-wide text-primary-foreground">
-                  After
-                </span>
-              </div>
-            </div>
-            <p className="mt-3 text-sm text-muted-foreground">{item.label}</p>
-          </FadeIn>
-        ))}
+      {/* Placeholder before/after — will be replaced with chosen variant */}
+      <div className="mt-16 grid gap-4 md:grid-cols-2 md:gap-6">
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-muted">
+          <div className="flex aspect-[4/3] items-center justify-center">
+            <span className="text-sm text-muted-foreground">Before photo</span>
+          </div>
+          <span className="absolute left-4 top-4 rounded-full border border-border bg-background/90 px-3 py-1 text-xs font-semibold tracking-wide text-muted-foreground backdrop-blur-sm">
+            Before
+          </span>
+        </div>
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-muted">
+          <div className="flex aspect-[4/3] items-center justify-center">
+            <span className="text-sm text-muted-foreground">After photo</span>
+          </div>
+          <span className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold tracking-wide text-primary-foreground">
+            After
+          </span>
+        </div>
       </div>
     </div>
   </section>
