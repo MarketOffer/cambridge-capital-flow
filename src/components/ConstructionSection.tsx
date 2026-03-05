@@ -29,8 +29,8 @@ const ConstructionSection = () => {
 
         <FadeIn delay={0.1}>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Our renovations are delivered by a construction business within our
-            founder's group — 40+ years of Cambridge experience.
+            Our renovations are delivered by our founder's 25+ year Cambridge
+            construction business.
           </p>
         </FadeIn>
 
