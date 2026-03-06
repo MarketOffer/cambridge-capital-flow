@@ -20,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cta-comparison" element={<CTAComparison />} />
+          <Route path="/form-comparison" element={<FormComparison />} />
           
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
