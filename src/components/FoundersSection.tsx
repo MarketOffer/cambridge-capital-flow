@@ -1,6 +1,7 @@
 import FadeIn from "./FadeIn";
 import logoBbc from "@/assets/logo-bbc.svg";
 import logoPia from "@/assets/logo-property-investor-awards.svg";
+import logoPe from "@/assets/logo-property-entrepreneur.png";
 
 const stats = [
   { number: "£5.7M", label: "Property portfolio" },
@@ -79,9 +80,7 @@ const FoundersSection = () => (
               </p>
               <div className="mt-4 flex items-center gap-8">
                 <img src={logoPia} alt="Property Investors Awards" className="h-8 opacity-60 grayscale" />
-                <div className="flex h-8 items-center justify-center rounded bg-muted px-4 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-                  Property Entrepreneur
-                </div>
+                <img src={logoPe} alt="Property Entrepreneur" className="h-8 opacity-60 grayscale" />
                 <img src={logoBbc} alt="BBC" className="h-6 opacity-60 grayscale" />
               </div>
             </div>
