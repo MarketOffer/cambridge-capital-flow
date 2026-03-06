@@ -2,9 +2,9 @@ import FadeIn from "./FadeIn";
 import blockPhoto from "@/assets/cambridge-block-flats.webp";
 
 const steps = [
-  { num: "01", title: "Acquire mispriced Cambridge blocks", detail: "Typically 2 to 20 flats in prime or emerging central locations." },
-  { num: "02", title: "Unlock targeted 15–25% equity uplift", detail: "Through title splitting, high‑spec renovation and planning gains where available." },
-  { num: "03", title: "Hold for hands‑off income", detail: "Let to professional tenants or, where economics are stronger, supported living providers, with maintenance overseen by our founder's construction business." },
+  { num: "01", title: "Acquire undervalued blocks", detail: "Typically 2 to 20 units." },
+  { num: "02", title: "Create 15–25% equity uplift", detail: "Through title splitting and high‑spec renovation of each unit." },
+  { num: "03", title: "Generate long‑term hands‑off income", detail: "Let to professional tenants or supported living providers." },
 ];
 
 const WhatWeAcquireTimeline = () => (
@@ -22,7 +22,7 @@ const WhatWeAcquireTimeline = () => (
       </FadeIn>
       <FadeIn delay={0.15}>
         <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
-          We focus on acquiring and improving residential blocks across Cambridge, the UK's leading science and tech hub, then holding them as high‑quality long‑term rentals.
+          We buy residential blocks in Cambridge and turn them into high quality homes.
         </p>
       </FadeIn>
 
