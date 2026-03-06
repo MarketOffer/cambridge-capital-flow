@@ -10,7 +10,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="border-t border-border px-6 py-28 md:px-10 md:py-36">
+    <section id="contact" className="px-6 py-28 md:px-10 md:py-36">
       <div className="mx-auto max-w-2xl">
         <FadeIn>
           <h2 className="text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
