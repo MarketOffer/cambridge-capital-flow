@@ -31,7 +31,7 @@ const TestimonialSection = () => (
         {/* Project image */}
         <div className="lg:col-span-2">
           <FadeIn delay={0.2}>
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-muted">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl border border-border bg-muted lg:aspect-[4/3]">
               <img
                 src={cambridgeBlockImg}
                 alt="Residential Block, Cambridge"
