@@ -16,7 +16,7 @@ const InvestCTASection = () => (
           </p>
           <a
             href="#contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-sm border border-primary/40 px-6 py-2.5 text-sm font-medium text-foreground/70 transition-colors hover:border-primary hover:text-foreground"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-background px-6 py-2.5 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-background/80"
           >
             Invest With Us
             <ArrowRight className="h-3.5 w-3.5 text-primary" />
