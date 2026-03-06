@@ -15,7 +15,7 @@ const founders = [
 ];
 
 const FoundersSection = () => (
-  <section className="border-t border-border px-6 py-28 md:px-10 md:py-36">
+  <section id="founders" className="border-t border-border px-6 py-28 md:px-10 md:py-36">
     <div className="mx-auto max-w-6xl">
       {/* Top: Photos + Intro */}
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
