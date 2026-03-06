@@ -78,9 +78,7 @@ const FoundersSection = () => (
                 Selected recognition for projects led by our team
               </p>
               <div className="mt-4 flex items-center gap-8">
-                <div className="flex h-8 items-center justify-center rounded bg-muted px-4 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
-                  Property Investors Awards
-                </div>
+                <img src={logoPia} alt="Property Investors Awards" className="h-8 opacity-60 grayscale" />
                 <div className="flex h-8 items-center justify-center rounded bg-muted px-4 text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
                   Property Entrepreneur
                 </div>
