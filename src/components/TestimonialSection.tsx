@@ -1,5 +1,6 @@
 import FadeIn from "./FadeIn";
 import { Quote } from "lucide-react";
+import cambridgeBlockImg from "@/assets/cambridge-block-bbc.webp";
 
 const TestimonialSection = () => (
   <section className="border-t border-border px-6 py-28 md:px-10 md:py-36">
