@@ -124,6 +124,8 @@ const ContactSection = () => {
               <div className="flex items-start gap-3">
                 <Checkbox
                   id="terms"
+                  checked={termsAgreed}
+                  onCheckedChange={(v) => setTermsAgreed(v === true)}
                   required
                   className="mt-0.5"
                 />
@@ -136,7 +138,7 @@ const ContactSection = () => {
               </div>
               <button
                 type="submit"
-                disabled={!confirmed}
+                disabled={!confirmed || !termsAgreed}
                 className="mt-4 rounded-sm bg-primary px-8 py-3.5 font-sans text-sm font-semibold tracking-wide text-primary-foreground transition-opacity hover:opacity-85 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Book an Introductory Call
