@@ -79,9 +79,9 @@ const FoundersSection = () => (
                 Selected recognition for projects led by our team
               </p>
               <div className="mt-4 flex items-center gap-8">
-                <img src={logoPia} alt="Property Investors Awards" className="h-8 opacity-60 grayscale" />
-                <img src={logoPe} alt="Property Entrepreneur" className="h-8 opacity-60 grayscale" />
-                <img src={logoBbc} alt="BBC" className="h-6 opacity-60 grayscale" />
+                <img src={logoPia} alt="Property Investors Awards" className="h-8 grayscale opacity-40" />
+                <img src={logoPe} alt="Property Entrepreneur" className="h-8 grayscale opacity-40" />
+                <img src={logoBbc} alt="BBC" className="h-6 grayscale opacity-40" />
               </div>
             </div>
           </FadeIn>
