@@ -191,7 +191,7 @@ const ContactSection = () => {
                           : "border-2 border-primary bg-transparent text-primary cursor-not-allowed"
                       }`}
                     >
-                      Book an Introductory Call
+                      Book a Call
                     </button>
                   </div>
                 </div>
