@@ -33,7 +33,7 @@ const CalBookingSection = () => {
               calLink="team/brightcap/partner-investor-call"
               calOrigin="https://cal.eu"
               style={{ width: "100%", height: "100%", overflow: "scroll" }}
-              config={{ layout: "week_view", useSlotsViewOnSmallScreen: "true" }}
+              config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true", theme: "light" }}
             />
           </div>
         </FadeIn>
