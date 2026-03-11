@@ -9,8 +9,6 @@ import InvestorProfileSection from "@/components/InvestorProfileSection";
 import FoundersSection from "@/components/FoundersSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import InvestCTASection from "@/components/InvestCTASection";
-import CalBookingSection from "@/components/CalBookingSection";
-import CalBookingSectionHTML from "@/components/CalBookingSectionHTML";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -27,8 +25,6 @@ const Index = () => (
     <FoundersSection />
     <TestimonialSection />
     <InvestCTASection />
-    <CalBookingSection />
-    <CalBookingSectionHTML />
     <ContactSection />
     <Footer />
   </>
