@@ -94,7 +94,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="#invest"
             onClick={() => setMobileOpen(false)}
             className="mt-3 inline-block rounded-sm bg-primary px-6 py-2.5 text-base font-semibold tracking-wide text-primary-foreground transition-opacity hover:opacity-85"
           >
