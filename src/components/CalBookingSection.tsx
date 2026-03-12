@@ -33,12 +33,15 @@ const CalBookingSection = () => {
 
     const Cal = (window as any).Cal;
     Cal("init", "partner-investor-call", { origin: "https://app.cal.eu" });
+
+    const calLayout = window.innerWidth < 768 ? "column_view" : "month_view";
+
     Cal.ns["partner-investor-call"]("inline", {
       elementOrSelector: "#my-cal-inline-partner-investor-call",
-      config: { layout: "column_view", useSlotsViewOnSmallScreen: "false" },
+      config: { layout: calLayout, useSlotsViewOnSmallScreen: "false" },
       calLink: "team/brightcap/partner-investor-call",
     });
-    Cal.ns["partner-investor-call"]("ui", { hideEventTypeDetails: true, layout: "column_view" });
+    Cal.ns["partner-investor-call"]("ui", { hideEventTypeDetails: true, layout: calLayout });
   }, []);
 
   return (
