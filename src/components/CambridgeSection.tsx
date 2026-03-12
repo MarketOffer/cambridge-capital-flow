@@ -39,7 +39,7 @@ const CambridgeSection = () => (
       </FadeIn>
       <FadeIn delay={0.1}>
         <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-muted-foreground md:text-lg">
-          Our first market. The world's leading science and tech cluster.
+          Our first market. The world's leading science and tech cluster.<sup>1</sup>
         </p>
       </FadeIn>
       <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
