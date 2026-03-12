@@ -64,6 +64,9 @@ const CalBookingSection = () => {
               <p className="mx-auto mt-3 max-w-2xl text-base font-semibold leading-relaxed text-muted-foreground md:text-lg">
                 Pick a date and time that suits you below.
               </p>
+              <div className="mt-4 flex justify-center">
+                <ArrowDown className="text-primary" size={28} strokeWidth={2.5} />
+              </div>
             </div>
             <div
               id="my-cal-inline-partner-investor-call"
