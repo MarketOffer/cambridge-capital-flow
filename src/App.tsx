@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import CTAComparison from "./pages/CTAComparison";
 import FormComparison from "./pages/FormComparison";
+import BookingComparison from "./pages/BookingComparison";
 
 import NotFound from "./pages/NotFound";
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/cta-comparison" element={<CTAComparison />} />
           <Route path="/form-comparison" element={<FormComparison />} />
+          <Route path="/booking-comparison" element={<BookingComparison />} />
           
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
