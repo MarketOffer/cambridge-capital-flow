@@ -35,10 +35,10 @@ const CalBookingSection = () => {
     Cal("init", "partner-investor-call", { origin: "https://app.cal.eu" });
     Cal.ns["partner-investor-call"]("inline", {
       elementOrSelector: "#my-cal-inline-partner-investor-call",
-      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
+      config: { layout: "column_view", useSlotsViewOnSmallScreen: "true" },
       calLink: "team/brightcap/partner-investor-call",
     });
-    Cal.ns["partner-investor-call"]("ui", { hideEventTypeDetails: true, layout: "month_view" });
+    Cal.ns["partner-investor-call"]("ui", { hideEventTypeDetails: true, layout: "column_view" });
   }, []);
 
   return (
