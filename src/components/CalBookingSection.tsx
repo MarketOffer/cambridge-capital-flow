@@ -46,11 +46,14 @@ const CalBookingSection = () => {
       <div className="mx-auto max-w-5xl">
         <FadeIn>
           <h2 className="text-center text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
-            Schedule a Call
+            Book an Investor Discovery Call
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">
-            Pick a time that works for you and we'll walk you through our
-            Cambridge block strategy.
+            A no-obligation call to discuss your investment goals, explore our
+            Cambridge block strategy, and find out whether there's a genuine fit.
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">
+            Pick a time that works for you below.
           </p>
         </FadeIn>
         <FadeIn delay={0.15}>
