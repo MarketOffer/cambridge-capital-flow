@@ -159,8 +159,3 @@
     letter-spacing: -0.02em;
   }
 }
-
-/* Hide Cal.com event type details block inside embed */
-#my-cal-inline-partner-investor-call [data-testid="event-meta"] {
-  display: none !important;
-}
