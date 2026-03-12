@@ -49,19 +49,21 @@ const CalBookingSection = () => {
       <div className="mx-auto max-w-4xl">
         <FadeIn>
           <div className="rounded-2xl border border-border bg-card p-8 shadow-[0_12px_48px_-12px_hsl(var(--foreground)/0.10)] md:p-14">
-            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-primary">
-              Interested in investing with us?
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
-              Book an Investor Discovery Call
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              A no-obligation call to discuss your investment goals, explore our
-              Cambridge block strategy, and find out whether there's a genuine fit.
-            </p>
-            <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Pick a time that works for you below.
-            </p>
+            <div className="text-center">
+              <p className="font-sans text-sm font-semibold uppercase tracking-widest text-primary">
+                Interested in investing with us?
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
+                Book an Investor Discovery Call
+              </h2>
+              <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                A no-obligation call to discuss your investment goals, explore our
+                Cambridge block strategy, and find out whether there's a genuine fit.
+              </p>
+              <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                Pick a time that works for you below.
+              </p>
+            </div>
             <div
               id="my-cal-inline-partner-investor-call"
               className="mt-10"
