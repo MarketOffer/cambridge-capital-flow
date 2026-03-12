@@ -43,25 +43,25 @@ const CalBookingSection = () => {
 
   return (
     <section className="px-6 py-20 md:px-10 md:py-28">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-4xl">
         <FadeIn>
-          <h2 className="text-center text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
-            Book an Investor Discovery Call
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">
-            A no-obligation call to discuss your investment goals, explore our
-            Cambridge block strategy, and find out whether there's a genuine fit.
-          </p>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">
-            Pick a time that works for you below.
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.15}>
-          <div
-            id="my-cal-inline-partner-investor-call"
-            className="mt-10"
-            style={{ width: "100%", minHeight: "600px", overflow: "visible" }}
-          />
+          <div className="rounded-2xl border border-border/60 bg-muted/30 px-6 py-12 md:px-12 md:py-16">
+            <h2 className="text-3xl font-semibold tracking-[-0.02em] text-foreground md:text-[2.75rem] md:leading-[1.1]">
+              Book an Investor Discovery Call
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              A no-obligation call to discuss your investment goals, explore our
+              Cambridge block strategy, and find out whether there's a genuine fit.
+            </p>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              Pick a time that works for you below.
+            </p>
+            <div
+              id="my-cal-inline-partner-investor-call"
+              className="mt-10"
+              style={{ width: "100%", minHeight: "600px", overflow: "visible" }}
+            />
+          </div>
         </FadeIn>
       </div>
     </section>
