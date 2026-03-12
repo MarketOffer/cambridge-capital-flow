@@ -24,6 +24,7 @@ const App = () => (
           <Route path="/cta-comparison" element={<CTAComparison />} />
           <Route path="/form-comparison" element={<FormComparison />} />
           <Route path="/booking-comparison" element={<BookingComparison />} />
+          <Route path="/headline-comparison" element={<HeadlineComparison />} />
           
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
