@@ -3,15 +3,41 @@ import brightcapLogo from "@/assets/brightcap_logo.svg";
 const Footer = () => (
   <footer className="border-t border-border px-6 py-12 md:px-10">
     <div className="mx-auto max-w-6xl">
-      <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+      <div className="flex flex-col items-start justify-between gap-8 md:flex-row">
         <img src={brightcapLogo} alt="brightcap" className="h-4" />
-        <div className="flex items-center gap-6">
-          <span className="font-sans text-xs text-muted-foreground">© 2025 brightcap</span>
-          <a href="#" className="font-sans text-xs text-muted-foreground transition-colors hover:text-foreground">
-            Privacy Policy
-          </a>
+
+        <div className="flex flex-col gap-8 sm:flex-row sm:gap-16">
+          {/* Terms & Policies */}
+          <div className="space-y-2">
+            <h4 className="font-sans text-xs font-semibold text-foreground">Terms &amp; Policies</h4>
+            <a href="#" className="block font-sans text-xs text-muted-foreground transition-colors hover:text-foreground">
+              Privacy Policy
+            </a>
+            <a href="#" className="block font-sans text-xs text-muted-foreground transition-colors hover:text-foreground">
+              Web Terms
+            </a>
+          </div>
+
+          {/* Contact Us */}
+          <div className="space-y-2">
+            <h4 className="font-sans text-xs font-semibold text-foreground">Contact Us</h4>
+            <a href="tel:08000862278" className="block font-sans text-xs text-muted-foreground transition-colors hover:text-foreground">
+              0800 086 2278
+            </a>
+            <a href="mailto:support@brightcap.capital" className="block font-sans text-xs text-muted-foreground transition-colors hover:text-foreground">
+              support@brightcap.capital
+            </a>
+            <a href="/contactus" className="block font-sans text-xs text-muted-foreground transition-colors hover:text-foreground">
+              Full Contact Details
+            </a>
+          </div>
         </div>
       </div>
+
+      <div className="mt-6">
+        <span className="font-sans text-xs text-muted-foreground">© 2025 brightcap</span>
+      </div>
+
       <div className="mt-8 max-w-xl space-y-3">
         <p className="font-sans text-[11px] leading-relaxed text-muted-foreground">
           BrightCap does not provide regulated financial or investment advice. This website is for information purposes only and does not constitute an offer to invest.
